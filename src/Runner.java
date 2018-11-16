@@ -23,6 +23,7 @@ public class Runner {
 	 * Returns if the array passed in is considered a winning run
 	 * 		Winning means that all of the columns in the run are the same thing
 	 * 
+	 * @param result the resluts from a run to be checked if it won
 	 * @return if the array passed in is considered a winning run
 	 */
 	public static boolean won(String[] result) {
