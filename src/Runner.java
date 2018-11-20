@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Runner {
 	/**
 	 * Returns the results of a run in the form of an array
@@ -34,26 +32,5 @@ public class Runner {
 		}
 		
 		return true;
-	}
-	
-	public static void main(String[] args) {
-		boolean notYet = true;
-		String[] rolls = {"small", "medium", "large","mini","jackpot","extra"};
-		int lossCount = 0;
-		
-		while(notYet) {
-			String[] result = run(5, rolls);
-			System.out.println(Arrays.toString(result));
-			
-			if (won(result)) {
-				System.out.println("Won");
-				System.out.println("Loss Count: " + lossCount);
-				notYet = false;
-			}
-			else {
-				System.out.println("Loss");
-				lossCount++;
-			}
-		}
 	}
 }
